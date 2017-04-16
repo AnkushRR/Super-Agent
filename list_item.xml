@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/list_item"
+    android:background="#aa00ff"
+    android:layout_gravity="center_vertical"
+    tools:layout_editor_absoluteY="85dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="78dp"
+        android:background="@android:color/background_light"
+        android:onClick="openPayActivity"
+        android:text="Pay"
+        app:layout_constraintRight_toLeftOf="@+id/mobilr_no"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/customer_id"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="79dp"
+        android:layout_marginRight="78dp" />
+
+    <TextView
+        android:id="@+id/customer_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer ID"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/billing_unit"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/customer_name"
+        android:layout_marginLeft="0dp" />
+
+    <TextView
+        android:id="@+id/customer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="36sp"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mobilr_no" />
+
+    <Button
+        android:id="@+id/task_delete"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="1dp"
+        android:onClick="deleteTask"
+        android:background="@android:color/background_light"
+        android:text="Delete"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/billing_unit"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/billing_unit"
+        android:layout_marginRight="1dp" />
+
+    <TextView
+        android:id="@+id/mobilr_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Number"
+        android:textSize="18sp"
+        android:layout_marginEnd="15dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="15dp" />
+
+    <TextView
+        android:id="@+id/billing_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Billing Unit"
+        android:textSize="18sp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="14dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/mobilr_no"
+        android:layout_marginRight="14dp" />
+
+</android.support.constraint.ConstraintLayout>
